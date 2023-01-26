@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 700px;
+  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 7px 7px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.top-part {
+  padding: 35px 100px 38px 32px;
+}
+
+.top-part>p {
+  color: #bcc9d1;
+  line-height: 26px;
+}
+
+.top-part>h2 {
+  color: #2ab2af;
+  margin-bottom: 22px;
+}
+
+.top-part>h4 {
+  margin-bottom: 10px;
+  color: #c0df34;
+}
+
+.bottom-part {
+  display: flex;
+}
+
+.left-part {
+  flex-basis: 50%;
+  background-color: #1da8a7;
+  color: white;
+  padding: 35px 30px 35px 35px;
+}
+
+.price {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#price-tag {
+  font-weight: bolder;
+  font-size: 30px;
+  opacity: 1;
+}
+
+#price-time {
+  padding-left: 15px;
+  opacity: 0.4;
+  font-weight: 400;
+}
+
+.left-part>p {
+  margin-top: 0;
+  padding-top: 6px;
+  padding-bottom: 30px;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.left-part a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50.88px;
+  width: 98%;
+  border-radius: 5px 5px;
+  border-style: none;
+  background-color: #c0df34;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.right-part {
+  flex-basis: 50%;
+  background-color: #4bc4c2;
+  color: white;
+  padding: 35px 30px 35px 35px;
+}
+
+.right-part>h4 {
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.95;
+  margin-bottom: 18px;
+}
+
+.right-part>ul {
+  opacity: 0.7;
+  list-style-type: none;
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 20px;
+}
+
+.left-part>h4 {
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #d0d038;
+}
+
+@media(max-width: 767px) {
+  body {
+    height: 100%;
+    margin: 4rem auto 4rem auto;
+  }
+
+  main {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .top-part {
+    padding: 32px 14px 38px 32px;
+  }
+
+  .bottom-part {
+    flex-direction: column;
+  }
+
+  .left-part,
+  .right-part {
+    padding: 1.5rem;
+  }
+
+  .left-part a {
+    width: 90%;
+  }
+}
